@@ -15,34 +15,28 @@ Based on this, two questions are used for guidance:
 
 ### Technology
 
-The technological basis is the aarch64 architecture with ELF executable format.
+The technological basis is the x86_64 architecture with ELF executable format.
 
 All code is run inside a QEMU virtual machine hosting an Alpine Linux OS.
 
 
 ### Documentation
 
-* aarch64 instruction set reference
-* ELF documentation (for aarch64)
+* x86_64 instruction set reference
+* ELF documentation
 * Alpine Linux
 
 
-### Development Cycle
+### Development Setup
 
-* design
-* develop
-* build
-* run
-* inspect
-
-## Ramp-Up
-
-* aarch64 hello world on tinycore vm
-  
+* QEMU VM with TinyCore Linux to execute code
+* crosscompilation setup on host
 
 ## Experiments
 
 * Can a program write itself to disk from memory alone?
+* Can a program change one byte of its code and execute that part of the code?
+* ...
 * Can a program evolve to use the correct assembly command in one position?
 * What memory layout would give some robustness against random byte-mutation?
 
